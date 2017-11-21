@@ -1,0 +1,35 @@
+* {box-sizing: border-box;}
+
+li {list-style-type: none; margin: 0; padding: 0;}
+a {text-decoration: none; color: black;}
+a:hover, a:active {
+  text-decoration: underline;
+  font-weight: bold;}
+
+                /*        FONTS     */
+h1, h2, h3, li, footer { font-family: 'Frijole', cursive;}
+p { font-family: 'Open Sans', sans-serif;}
+
+                 /*        LAYOUT           */
+header {grid-area: header;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
+header, nav, main, footer {text-align: center;}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 80% 1fr;
+  grid-template-rows: 1fr 20% 60% 10% 1fr;
+  grid-template-areas:
+    "   .     .    .  "
+    "   .  header  .  "
+    "   .   main   .  "
+    "   .  footer  .  "
+    "   .     .    .  ";
+  grid-gap: 5px 5px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+               /*        COLOURS      */

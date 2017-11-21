@@ -4,15 +4,25 @@
     <meta charset="utf-8">
     <title>Rock Paper Sissors</title>
     <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
-    <h1>Rock Paper Scissors</h1>
-    <nav>
-      <ul>
-        <li><a href="/home">Rules</a></li>
-      </ul>
-    </nav>
-    <%= yield %>
-    <footer><small>Some footer stuff</small></footer>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+
+      <nav>
+        <ul>
+          <li><a href="/home">Rules</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <small>Some footer stuff</small>
+    </footer>
   </body>
 </html>

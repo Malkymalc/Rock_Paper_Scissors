@@ -25,10 +25,10 @@ class RockPaperScissors
 
   def result
     #verification
-    return "#{alert} #{@player1} and #{@player2}" unless @referee.has_key?(@player1) || @referee.has_key?(@player2)
-    return "#{alert} #{@player1}" unless @referee.has_key?(@player1)
-    return "#{alert} #{@player2}" unless @referee.has_key?(@player2)
+    return "Player 1 and Player 2: #{@alert}" unless @referee.has_key?(@player1) || @referee.has_key?(@player2)
+    return "Player 1 #{@alert}" unless @referee.has_key?(@player1)
+    return "Player 2 #{@alert}" unless @referee.has_key?(@player2)
     #result
-    return @referee[@player1][@player2]
+    return "Result: #{@referee[@player1][@player2]} "
   end
 end
